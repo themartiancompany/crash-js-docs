@@ -29,19 +29,70 @@ Change directory.
 
 Prints the content of a file.
 
+##### `_chown`
+
+Alias for `fs.chownSync`.
+For browsers it's just a stub as of now.
+
+##### `_cp`
+
+Alias to `fs.cpSync`.
+
 ##### `_cwd`
 
 See
 [`_pwd`](
   Functions.md#_pwd)
 
+##### `_dir_exists`
+
+To be used in place of Bash' `-d`,
+i.e.:
+
+```bash
+if [[ -d "/path/to/directory" ]]; then
+  echo \
+    "The directory exists."
+fi
+```
+
+```javascript
+if ( _file_exists(
+       "/path/to/directory") {
+  _echo(
+    "The directory exists."
+}
+```
+
+##### `_dirname`
+
+Alias to `os.path.dirname`.
+
 ##### `_echo`
 
 Alias to `console.log`.
 
+##### `_exit`
+
+Alias to `process.exit`.
+
+##### `_file_append`
+
+To be used in place of `>>`.
+
+##### `_file_read`
+
+Alias for
+[`_cat`](
+  Functions.md#_cat).
+
+##### `_file_write`
+
+To be used in place of `>`.
+
 ##### `_ls`
 
-Alias for `_fs.readdirSync`.
+Alias to `fs.readdirSync`.
 
 ##### `_pwd`
 
@@ -72,11 +123,20 @@ const
     _libcrash_module._require;
 ```
 
+##### `_mkdir`
+
+Alias for `fs.mkdirSync`.
+
+##### `_rm`
+
+Alias for `fs.rmSync`.
+
 ##### `_run`
 
 Javascript implementation of `_run` from the
 [Crash Bash](
-  https://github.com/themartiancompany/crash-bash).
+  https://github.com/themartiancompany/crash-bash)
+library.
 
 ##### `_source`
 

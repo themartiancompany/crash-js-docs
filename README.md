@@ -33,15 +33,17 @@ In order to provide its functions, the library
 uses browser-compatible implementations of
 main Node.js modules.
 
-File system functions are handled by
+File system (`fs` module) and path (`os.path` module)
+functions are provided by
 [The Martian Company file system module](
   https://github.com/themartiancompany/tmcfs)
 (`tmcfs`) module, which overrides `node:fs`.
 
 Functions from the `node:process`
-module are provided by
+module are provided by the
 [`process-browserify`](
-  https://github.com/themartiancompany/process-browserify).
+  https://github.com/themartiancompany/process-browserify)
+module.
 
 All functions which are not named after
 common GNU Coreutils and Bash commands are 

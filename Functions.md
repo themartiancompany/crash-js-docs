@@ -265,9 +265,17 @@ See
 
 Synchronous spawn.
 
-##### `_spawn`
+##### `_spawn_async`
 
-Synchronous spawn.
+Aynchronous spawn.
+
+##### `_split`
+
+The `_split` function from the
+[`tmcsplit`](
+  https://github.com/themartiancompany/tmcsplit)
+The Martian Company's GNU Split Javascript
+implementation module.
 
 ##### `_stat`
 

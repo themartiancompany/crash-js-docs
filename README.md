@@ -30,7 +30,7 @@ every platform on which it's possible to
 run Javascript (web browsers or Node.js).
 
 - [Functions](
-    functions.md).
+    Functions.md)
 
 The documentation is released under the terms of the
 GNU Affero General Public License version 3.

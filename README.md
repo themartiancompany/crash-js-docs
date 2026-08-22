@@ -29,6 +29,25 @@ programs and are seamlessly integrated with
 every platform on which it's possible to
 run Javascript (web browsers or Node.js).
 
+In order to provide its functions, the library
+uses browser-compatible implementations of
+main Node.js modules.
+
+File system functions are handled by
+[The Martian Company file system module](
+  https://github.com/themartiancompany/tmcfs)
+(`tmcfs`) module, which overrides `node:fs`.
+
+Functions from the `node:process`
+module are provided by
+[`process-browserify`](
+  https://github.com/themartiancompany/process-browserify).
+
+All functions which are not named after
+common GNU Coreutils and Bash commands are 
+to be intended implementations of functions
+contained in the Crash Bash library.
+
 - [Functions](
     Functions.md)
 

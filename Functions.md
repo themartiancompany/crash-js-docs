@@ -21,6 +21,32 @@
 
 ### Crash Javascript documentation
 
+##### `_cd`
+
+Change directory. 
+
+##### `_cat`
+
+Prints the content of a file.
+
+##### `_cwd`
+
+See
+[`_pwd`](
+  Functions.md#_pwd)
+
+##### `_echo`
+
+Alias to `console.log`.
+
+##### `_ls`
+
+Alias for `_fs.readdirSync`.
+
+##### `_pwd`
+
+Prints current directory.
+
 ##### `_require`
 
 Asynchronous `require` override;
@@ -46,9 +72,23 @@ const
     _libcrash_module._require;
 ```
 
-##### `_source`:
-    See [`require`](
-           Functions.md#_require)
+##### `_run`
+
+Javascript implementation of `_run` from the
+[Crash Bash](
+  https://github.com/themartiancompany/crash-bash).
+
+##### `_source`
+
+See
+  [`require`](
+    Functions.md#_require)
+
+##### `_stat`
+
+Return file system info for a file.
+
+##### 
 
 This document is released under the terms of the
 GNU Affero General Public License version 3.

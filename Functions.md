@@ -95,6 +95,17 @@ Alias to `os.path.dirname`.
 
 Alias to `console.log`.
 
+##### `_echo2`
+
+Alias to `console.error`.
+Function's name etimology is
+
+```bash
+echo \
+  "hooo" \
+  1>&2
+```
+
 ##### `_exit`
 
 Alias to `process.exit`.

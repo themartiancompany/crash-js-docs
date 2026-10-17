@@ -36,13 +36,24 @@ or one by `_argv_url_get`.
 Returns a `process.argv` array obtained
 from the URL the browser is currently at.
 
-##### `_cd`
+##### `_cache_get`
 
-Change directory. 
+Returns as a string the path of the XDG user
+cache directory.
 
 ##### `_cat`
 
 Prints the content of a file.
+
+##### `_cd`
+
+Change directory. 
+
+##### `_cfg_dir_get`
+
+See
+[`_config_dir_get`](
+  Functions.md#_config_dir_get).
 
 ##### `_chown`
 
@@ -56,6 +67,11 @@ is named same as the argument.
 In programs it's currently needed to tell
 Node.js or the browser environment how
 to parse command-line options.
+
+##### `_config_dir_get`
+
+Returns as a string the path of the XDG user
+configuration directory.
 
 ##### `_cp`
 
@@ -141,6 +157,18 @@ const
     await _fs_worker_start(
       "fs-worker.js");
 ```
+
+#### `_get_cache`
+
+See
+[`_cache_get`](
+  Functions.md#_cache_get).
+
+#### `_get_config_dir`
+
+See
+[`config_dir_get`](
+  Functions.md#_config_dir_get).
 
 #### `_get_date_human`
 

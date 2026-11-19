@@ -247,6 +247,13 @@ Prints current directory.
 
 Equivalent to `range` in Python.
 
+##### `_realpath`
+
+Equivalent to `realpath` in Bash,
+prints the real path of a file
+in the file system resolving links.
+For OPFS it's `_path.resolve`.
+
 ##### `_require`
 
 Asynchronous `require` override;
